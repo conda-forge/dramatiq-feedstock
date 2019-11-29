@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - dramatiq = dramatiq.__main__:main
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
@@ -21,7 +21,7 @@ requirements:
     - pip
     - python >=3.5
   run:
-    - prometheus_client >=0.2,<0.3
+    - prometheus_client >=0.2
     - python >=3.5
 
 test:
