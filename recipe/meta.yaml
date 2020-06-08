@@ -1,20 +1,20 @@
 {% set name = "dramatiq" %}
-{% set version = "1.8.1" %}
+{% set version = "1.9.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 36302574963fb9bfaed871c2b0d7fbffbcfe9fadaecc8938540901f8aea17eb8
+  sha256: 8112941ab2eda4f0288bacd137a991f9b1b1c600fe3dd5960eaba4256c873839
 
 build:
   noarch: python
   number: 0
   entry_points:
     - dramatiq = dramatiq.__main__:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
 requirements:
   host:
@@ -40,11 +40,11 @@ about:
   home: https://dramatiq.io
   license: GNU Lesser General Public v3 or later (LGPLv3+)
   license_family: LGPL
-  license_file: COPYING 
+  license_file: COPYING
   summary: Background Processing for Python 3.
   dev_url: https://github.com/Bogdanp/dramatiq
 
 extra:
   recipe-maintainers:
     - lincrosenbach
-    - nicoddemus  
+    - nicoddemus
