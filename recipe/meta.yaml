@@ -39,7 +39,7 @@ test:
 about:
   home: https://dramatiq.io
   license: GNU Lesser General Public v3 or later (LGPLv3+)
-  license_family: LGPL
+  license_family: LGPL-3.0-or-later
   license_file: COPYING
   summary: Background Processing for Python 3.
   dev_url: https://github.com/Bogdanp/dramatiq
