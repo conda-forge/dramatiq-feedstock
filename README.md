@@ -1,11 +1,11 @@
-About dramatiq
-==============
+About dramatiq-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dramatiq-feedstock/blob/main/LICENSE.txt)
 
 Home: https://dramatiq.io
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dramatiq-feedstock/blob/main/LICENSE.txt)
 
 Summary: Background Processing for Python 3.
 
