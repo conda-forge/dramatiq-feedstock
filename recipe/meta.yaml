@@ -1,5 +1,5 @@
 {% set name = "dramatiq" %}
-{% set version = "1.17.0" %}
+{% set version = "1.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7621280160b2f0dcb9cdd20eeee41e009d42bc7cc75a2c4b9b944c641dadd4df
+  sha256: 2675d2f57e0d82db3a7d2a60f1f9c536365349db78c7f8d80a63e4c54697647a
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - prometheus_client >=0.2
     - python >=3.8
