@@ -1,5 +1,5 @@
 {% set name = "dramatiq" %}
-{% set version = "1.18.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5ea436b6e50dae64d4de04f1eb519ad239a6b1ba6315ba1dce1c0c4c1ebedfaf
+  sha256: 85ff840bcc1393812e0079bb310036f647e011036124a7a1492692da7966a093
 
 build:
   noarch: python
